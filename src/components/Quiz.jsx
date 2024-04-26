@@ -1,5 +1,4 @@
 import { useState, useCallback } from "react"
-
 import QUESTION from "../question"
 import quizCompleteImg from "../assets/quiz-complete.png"
 import QuestionTimer from "./questionTimer";
@@ -21,7 +20,8 @@ export default function Quiz() {
         console.log(userAnswers)
     },[])
 
-    const handleSkipAnswer = useCallback(() => handleSelectAnswer(null),
+    const handleSkipAnswer = useCallback(() => 
+        handleSelectAnswer(null),
      [handleSelectAnswer]
     )
 
